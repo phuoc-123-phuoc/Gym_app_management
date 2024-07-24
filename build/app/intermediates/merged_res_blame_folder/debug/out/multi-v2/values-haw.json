@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/lephuoc/Documents/customer_app_multistore/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-haw/values-haw.xml",
+            "map": [
+                {
+                    "source": "/Users/lephuoc/.gradle/caches/transforms-3/4f06bd463a6d9773c7d01531cf224a49/transformed/jetified-hcaptcha-20.37.4/res/values-haw/values-haw.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "84",
+                        "endOffsets": "135"
+                    }
+                }
+            ]
+        }
+    ]
+}

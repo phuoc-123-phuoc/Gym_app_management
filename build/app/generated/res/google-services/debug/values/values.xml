@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">1003666331848</string>
+    <string name="google_api_key" translatable="false">AIzaSyDlJ7yHnXpIL-Tr9fqgr6C4vLHA9Xg_84M</string>
+    <string name="google_app_id" translatable="false">1:1003666331848:android:e36af2f24be92182a8adfd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDlJ7yHnXpIL-Tr9fqgr6C4vLHA9Xg_84M</string>
+    <string name="google_storage_bucket" translatable="false">gym-manager-305a5.appspot.com</string>
+    <string name="project_id" translatable="false">gym-manager-305a5</string>
+</resources>

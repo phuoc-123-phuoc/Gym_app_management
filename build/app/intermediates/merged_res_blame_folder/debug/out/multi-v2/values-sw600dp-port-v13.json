@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/lephuoc/Documents/customer_app_multistore/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-port-v13/values-sw600dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/res/values-sw600dp-port-v13/values-sw600dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,164",
+                        "endColumns": "55,52,48",
+                        "endOffsets": "106,159,208"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1437 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.gym"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/debug/AndroidManifest.xml:6:22-64
+15
+16    <queries>
+16-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:40:6-55:11
+17
+18        <!-- If your app checks for SMS support -->
+19        <intent>
+19-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:42:3-45:12
+20            <action android:name="android.intent.action.VIEW" />
+20-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+20-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+21
+22            <data android:scheme="sms" />
+22-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+22-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+23        </intent>
+24        <!-- If your app checks for call support -->
+25        <intent>
+25-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:47:3-50:12
+26            <action android:name="android.intent.action.VIEW" />
+26-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+26-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+27
+28            <data android:scheme="tel" />
+28-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+28-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+29        </intent>
+30        <!-- If your application checks for inAppBrowserView launch mode support -->
+31        <intent>
+31-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:52:3-54:12
+32            <action android:name="android.support.customtabs.action.CustomTabsService" />
+32-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:53:5-82
+32-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:53:13-79
+33        </intent>
+34        <intent>
+34-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:9:9-11:18
+35            <action android:name="android.media.action.IMAGE_CAPTURE" />
+35-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:10:13-73
+35-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:10:21-70
+36        </intent>
+37        <intent>
+37-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:14:9-16:18
+38            <action android:name="android.speech.RecognitionService" />
+38-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:15:13-72
+38-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:15:21-69
+39        </intent> <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+40        <package android:name="com.android.chrome" /> <!-- Added to check the default browser that will host the AuthFlow. -->
+40-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:11:9-54
+40-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:11:18-51
+41        <intent>
+41-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:13:9-17:18
+42            <action android:name="android.intent.action.VIEW" />
+42-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+42-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+43
+44            <data android:scheme="http" />
+44-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+44-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+45        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+46        <package android:name="com.google.android.apps.maps" />
+46-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+46-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+47    </queries>
+48
+49    <uses-permission android:name="android.permission.WAKE_LOCK" />
+49-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+49-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+50    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+50-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+50-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+51    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+51-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+51-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+52    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+52-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+52-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+53    <uses-permission android:name="android.permission.VIBRATE" />
+53-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+53-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+54    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+54-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+54-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+55    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+55-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+55-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+56    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+56-->[com.google.firebase:firebase-iid:21.1.0] /Users/lephuoc/.gradle/caches/transforms-3/38d9d72fe50af65f0873bf80abf2cc7b/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
+56-->[com.google.firebase:firebase-iid:21.1.0] /Users/lephuoc/.gradle/caches/transforms-3/38d9d72fe50af65f0873bf80abf2cc7b/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:22-79
+57    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+57-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:25:5-79
+57-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:25:22-76
+58    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+58-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:26:5-88
+58-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:26:22-85
+59    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+59-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:27:5-82
+59-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:27:22-79
+60    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+60-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/lephuoc/.gradle/caches/transforms-3/db7a69c60725eb73e815ae6ded9bb11b/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+60-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/lephuoc/.gradle/caches/transforms-3/db7a69c60725eb73e815ae6ded9bb11b/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+61
+62    <uses-feature
+62-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+63        android:glEsVersion="0x00020000"
+63-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+64        android:required="true" />
+64-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+65
+66    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+66-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:26:5-110
+66-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:26:22-107
+67
+68    <permission
+68-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+69        android:name="com.example.gym.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+69-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+70        android:protectionLevel="signature" />
+70-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+71
+72    <uses-permission android:name="com.example.gym.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+72-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+72-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+73
+74    <application
+75        android:name="android.app.Application"
+76        android:allowBackup="true"
+76-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:20:9-35
+77        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+77-->[androidx.core:core:1.12.0] /Users/lephuoc/.gradle/caches/transforms-3/074a6b91283d9d929f7a464d4d65ecf8/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+78        android:debuggable="true"
+79        android:icon="@mipmap/launcher_icon"
+80        android:label="Gym Now"
+81        android:supportsRtl="true" >
+81-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:22:9-35
+82        <activity
+83            android:name="com.example.multi_store_app.MainActivity"
+84            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+85            android:exported="true"
+86            android:hardwareAccelerated="true"
+87            android:launchMode="singleTop"
+88            android:theme="@style/Theme.AppCompat"
+89            android:windowSoftInputMode="adjustResize" >
+90
+91            <!--
+92                 Specifies an Android theme to apply to this Activity as soon as
+93                 the Android process has started. This theme is visible to the user
+94                 while the Flutter UI initializes. After that, this theme continues
+95                 to determine the Window background behind the Flutter UI.
+96            -->
+97            <meta-data
+98                android:name="io.flutter.embedding.android.NormalTheme"
+99                android:resource="@style/NormalTheme" />
+100            <meta-data
+101                android:name="com.google.firebase.messaging.default_notification_channel_id"
+102                android:value="high_importance_channel" />
+103
+104            <intent-filter>
+105                <action android:name="android.intent.action.MAIN" />
+106
+107                <category android:name="android.intent.category.LAUNCHER" />
+108            </intent-filter>
+109        </activity>
+110        <!--
+111             Don't delete the meta-data below.
+112             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+113        -->
+114        <meta-data
+115            android:name="flutterEmbedding"
+116            android:value="2" />
+117
+118        <service
+118-->[:cloud_firestore] /Users/lephuoc/Documents/customer_app_multistore/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+119            android:name="com.google.firebase.components.ComponentDiscoveryService"
+119-->[:cloud_firestore] /Users/lephuoc/Documents/customer_app_multistore/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+120            android:directBootAware="true"
+120-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+121            android:exported="false" >
+121-->[com.google.firebase:firebase-analytics-ktx:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/573c47250ee2dae253c370234a8f42bc/transformed/jetified-firebase-analytics-ktx-21.5.1/AndroidManifest.xml:10:13-37
+122            <meta-data
+122-->[:cloud_firestore] /Users/lephuoc/Documents/customer_app_multistore/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+123-->[:cloud_firestore] /Users/lephuoc/Documents/customer_app_multistore/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:cloud_firestore] /Users/lephuoc/Documents/customer_app_multistore/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+125            <meta-data
+125-->[:firebase_auth] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+126-->[:firebase_auth] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_auth] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+128            <meta-data
+128-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+129                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+129-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
+131            <meta-data
+131-->[:firebase_storage] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+132                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+132-->[:firebase_storage] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-126
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[:firebase_storage] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+134            <meta-data
+134-->[:firebase_core] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+135                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+135-->[:firebase_core] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[:firebase_core] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-analytics-ktx:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/573c47250ee2dae253c370234a8f42bc/transformed/jetified-firebase-analytics-ktx-21.5.1/AndroidManifest.xml:11:13-13:85
+138                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+138-->[com.google.firebase:firebase-analytics-ktx:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/573c47250ee2dae253c370234a8f42bc/transformed/jetified-firebase-analytics-ktx-21.5.1/AndroidManifest.xml:12:17-129
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-analytics-ktx:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/573c47250ee2dae253c370234a8f42bc/transformed/jetified-firebase-analytics-ktx-21.5.1/AndroidManifest.xml:13:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:17:13-19:85
+141                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+141-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:18:17-122
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:19:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:20:13-22:85
+144                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+144-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:21:17-111
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-firestore:24.10.2] /Users/lephuoc/.gradle/caches/transforms-3/15138009195d127486d2b252941ca56c/transformed/jetified-firebase-firestore-24.10.2/AndroidManifest.xml:22:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:69:13-71:85
+147                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+147-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:70:17-109
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:71:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-messaging-ktx:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/5fb64c565ec875f1acc9cefe4d0f719f/transformed/jetified-firebase-messaging-ktx-23.4.1/AndroidManifest.xml:26:13-28:85
+150                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+150-->[com.google.firebase:firebase-messaging-ktx:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/5fb64c565ec875f1acc9cefe4d0f719f/transformed/jetified-firebase-messaging-ktx-23.4.1/AndroidManifest.xml:27:17-129
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-messaging-ktx:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/5fb64c565ec875f1acc9cefe4d0f719f/transformed/jetified-firebase-messaging-ktx-23.4.1/AndroidManifest.xml:28:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-iid:21.1.0] /Users/lephuoc/.gradle/caches/transforms-3/38d9d72fe50af65f0873bf80abf2cc7b/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+153                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+153-->[com.google.firebase:firebase-iid:21.1.0] /Users/lephuoc/.gradle/caches/transforms-3/38d9d72fe50af65f0873bf80abf2cc7b/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-iid:21.1.0] /Users/lephuoc/.gradle/caches/transforms-3/38d9d72fe50af65f0873bf80abf2cc7b/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:57:13-59:85
+156                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+156-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:58:17-122
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:59:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:60:13-62:85
+159                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+159-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:61:17-119
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:62:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
+162                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+162-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:31:17-118
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:32:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:33:13-35:85
+165                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+165-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:34:17-107
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-storage:20.3.0] /Users/lephuoc/.gradle/caches/transforms-3/3517775225bfd6533656b8783ee26380/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:35:17-82
+167            <meta-data
+167-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:37:13-39:85
+168                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+168-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:38:17-139
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:39:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+171                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+171-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+174                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+174-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-installations:17.2.0] /Users/lephuoc/.gradle/caches/transforms-3/26f3ae514b485802656218f68308406f/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:25:13-27:85
+177                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+177-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:26:17-120
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:27:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:28:13-30:85
+180                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+180-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:29:17-117
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-appcheck:17.1.2] /Users/lephuoc/.gradle/caches/transforms-3/d1e9a59a11132504894baee2efd34565/transformed/jetified-firebase-appcheck-17.1.2/AndroidManifest.xml:30:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/3fd111384f823d5a57649407a36c7b66/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+183                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+183-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/3fd111384f823d5a57649407a36c7b66/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/3fd111384f823d5a57649407a36c7b66/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+186                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+186-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/lephuoc/.gradle/caches/transforms-3/229a189d6156d9d33e90ae395c1f37d3/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+189                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+189-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/lephuoc/.gradle/caches/transforms-3/229a189d6156d9d33e90ae395c1f37d3/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/lephuoc/.gradle/caches/transforms-3/229a189d6156d9d33e90ae395c1f37d3/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+191        </service>
+192        <service
+192-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+193            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+193-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+194            android:exported="false"
+194-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+195            android:permission="android.permission.BIND_JOB_SERVICE" />
+195-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+196        <service
+196-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+197            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+197-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+198            android:exported="false" >
+198-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+199            <intent-filter>
+199-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+200                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+200-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+200-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+201            </intent-filter>
+202        </service>
+203
+204        <receiver
+204-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+205            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+205-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+206            android:exported="true"
+206-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+207            android:permission="com.google.android.c2dm.permission.SEND" >
+207-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+208            <intent-filter>
+208-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+209                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+209-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+209-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+210            </intent-filter>
+211        </receiver>
+212
+213        <provider
+213-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+214            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+214-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+215            android:authorities="com.example.gym.flutterfirebasemessaginginitprovider"
+215-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+216            android:exported="false"
+216-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+217            android:initOrder="99" />
+217-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+218
+219        <activity
+219-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-20:47
+220            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+220-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-104
+221            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+221-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-137
+222            android:exported="false"
+222-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+223            android:theme="@style/AppTheme" />
+223-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-44
+224        <activity
+224-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-24:55
+225            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+225-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-112
+226            android:exported="false"
+226-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-37
+227            android:theme="@style/ThemeTransparent" />
+227-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-52
+228        <activity
+228-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:55
+229            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+229-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-106
+230            android:exported="false"
+230-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-37
+231            android:theme="@style/ThemeTransparent" />
+231-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-52
+232        <activity
+232-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-33:55
+233            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+233-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-126
+234            android:exported="false"
+234-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-37
+235            android:launchMode="singleInstance"
+235-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-48
+236            android:theme="@style/ThemeTransparent" />
+236-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-52
+237        <activity
+237-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-38:55
+238            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+238-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-120
+239            android:exported="false"
+239-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-37
+240            android:launchMode="singleInstance"
+240-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-48
+241            android:theme="@style/ThemeTransparent" />
+241-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-52
+242
+243        <receiver
+243-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:40
+244            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+244-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-111
+245            android:enabled="true"
+245-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+246            android:exported="false" />
+246-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-37
+247
+248        <meta-data
+248-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:45:9-47:36
+249            android:name="io.flutter.embedded_views_preview"
+249-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-61
+250            android:value="true" />
+250-->[:flutter_inappwebview] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-33
+251
+252        <receiver
+252-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+253            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+253-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+254            android:exported="false" />
+254-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+255        <receiver
+255-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+256            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+256-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+257            android:exported="false" />
+257-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+258        <receiver
+258-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+259            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+259-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+260            android:exported="false" >
+260-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+261            <intent-filter>
+261-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+262                <action android:name="android.intent.action.BOOT_COMPLETED" />
+262-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+262-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+263                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+263-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+263-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+264                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+264-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+264-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+265                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+265-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+265-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+266            </intent-filter>
+267        </receiver>
+268
+269        <provider
+269-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+270            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+270-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+271            android:authorities="com.example.gym.flutter.image_provider"
+271-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+272            android:exported="false"
+272-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+273            android:grantUriPermissions="true" >
+273-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+274            <meta-data
+274-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+275                android:name="android.support.FILE_PROVIDER_PATHS"
+275-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+276                android:resource="@xml/flutter_image_picker_file_paths" />
+276-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+277        </provider>
+278        <provider
+278-->[:share] /Users/lephuoc/Documents/customer_app_multistore/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+279            android:name="io.flutter.plugins.share.ShareFileProvider"
+279-->[:share] /Users/lephuoc/Documents/customer_app_multistore/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-70
+280            android:authorities="com.example.gym.flutter.share_provider"
+280-->[:share] /Users/lephuoc/Documents/customer_app_multistore/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+281            android:exported="false"
+281-->[:share] /Users/lephuoc/Documents/customer_app_multistore/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+282            android:grantUriPermissions="true" >
+282-->[:share] /Users/lephuoc/Documents/customer_app_multistore/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+283            <meta-data
+283-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+284                android:name="android.support.FILE_PROVIDER_PATHS"
+284-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+285                android:resource="@xml/flutter_share_file_paths" />
+285-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+286        </provider>
+287
+288        <activity
+288-->[:url_launcher_android] /Users/lephuoc/Documents/customer_app_multistore/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+289            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+289-->[:url_launcher_android] /Users/lephuoc/Documents/customer_app_multistore/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+290            android:exported="false"
+290-->[:url_launcher_android] /Users/lephuoc/Documents/customer_app_multistore/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+291            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+291-->[:url_launcher_android] /Users/lephuoc/Documents/customer_app_multistore/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+292
+293        <provider
+293-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:23:9-32:20
+294            android:name="com.applozic.mobicomkit.uiwidgets.KmFileProvider"
+294-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:24:13-76
+295            android:authorities="com.example.gym.provider"
+295-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:25:13-60
+296            android:exported="false"
+296-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:26:13-37
+297            android:grantUriPermissions="true" >
+297-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:27:13-47
+298            <meta-data
+298-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+299                android:name="android.support.FILE_PROVIDER_PATHS"
+299-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+300                android:resource="@xml/km_provider_paths" />
+300-->[:image_picker_android] /Users/lephuoc/Documents/customer_app_multistore/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+301        </provider>
+302
+303        <service
+303-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:34:9-41:19
+304            android:name="com.applozic.mobicomkit.uiwidgets.KmFirebaseMessagingService"
+304-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:35:13-88
+305            android:exported="true"
+305-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:36:13-36
+306            android:stopWithTask="false" >
+306-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:37:13-41
+307            <intent-filter>
+307-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+308                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+308-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+308-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+309            </intent-filter>
+310        </service>
+311
+312        <activity
+312-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:43:9-49:34
+313            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+313-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:44:13-104
+314            android:configChanges="keyboardHidden|screenSize|locale|smallestScreenSize|screenLayout|orientation"
+314-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:45:13-113
+315            android:label="@string/app_name"
+315-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:46:13-45
+316            android:launchMode="singleTask"
+316-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:47:13-44
+317            android:theme="@style/ApplozicTheme" />
+317-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:48:13-49
+318        <activity
+318-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:50:9-55:58
+319            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.MobicomLocationActivity"
+319-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:51:13-107
+320            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+320-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:52:13-106
+321            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+321-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:53:13-118
+322            android:theme="@style/ApplozicTheme"
+322-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:54:13-49
+323            android:windowSoftInputMode="adjustResize" />
+323-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:55:13-55
+324        <activity
+324-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:56:9-68:20
+325            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.FullScreenImageActivity"
+325-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:57:13-107
+326            android:configChanges="keyboardHidden|orientation|screenSize"
+326-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:58:13-74
+327            android:label="Image"
+327-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:59:13-34
+328            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+328-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:60:13-118
+329            android:theme="@style/Applozic_FullScreen_Theme" >
+329-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:61:13-61
+330
+331            <!-- Parent activity meta-data to support API level 7+ -->
+332            <meta-data
+332-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:65:13-67:112
+333                android:name="android.support.PARENT_ACTIVITY"
+333-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:66:17-63
+334                android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+334-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:67:17-109
+335        </activity>
+336        <activity
+336-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:69:9-76:34
+337            android:name="com.applozic.mobicomkit.uiwidgets.conversation.richmessaging.webview.KmWebViewActivity"
+337-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:70:13-114
+338            android:configChanges="keyboardHidden|orientation|screenSize"
+338-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:71:13-74
+339            android:label="Image"
+339-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:72:13-34
+340            android:launchMode="singleTop"
+340-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:73:13-43
+341            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+341-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:74:13-118
+342            android:theme="@style/ApplozicTheme" />
+342-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:75:13-49
+343        <activity
+343-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:77:9-81:34
+344            android:name="com.applozic.mobicomkit.uiwidgets.kommunicate.activities.LeadCollectionActivity"
+344-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:78:13-107
+345            android:configChanges="keyboardHidden|orientation|screenSize"
+345-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:79:13-74
+346            android:theme="@style/ApplozicTheme" />
+346-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:80:13-49
+347        <activity
+347-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:82:9-92:20
+348            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.MobiComAttachmentSelectorActivity"
+348-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:83:13-117
+349            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+349-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:84:13-106
+350            android:launchMode="singleTop"
+350-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:85:13-43
+351            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+351-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:86:13-118
+352            android:theme="@style/ApplozicTheme"
+352-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:87:13-49
+353            android:windowSoftInputMode="stateHidden|adjustResize" >
+353-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:88:13-67
+354            <meta-data
+354-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:65:13-67:112
+355                android:name="android.support.PARENT_ACTIVITY"
+355-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:66:17-63
+356                android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+356-->[io.kommunicate.sdk:kommunicateui:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/51b61207233602caf6f58de8e45818ea/transformed/jetified-kommunicateui-2.9.6/AndroidManifest.xml:67:17-109
+357        </activity>
+358        <activity
+358-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:8:9-12:58
+359            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+359-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:9:13-80
+360            android:exported="false"
+360-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:10:13-37
+361            android:theme="@style/StripePaymentSheetDefaultTheme"
+361-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:11:13-66
+362            android:windowSoftInputMode="adjustResize" />
+362-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:12:13-55
+363        <activity
+363-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:13:9-17:58
+364            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+364-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:14:13-82
+365            android:exported="false"
+365-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:15:13-37
+366            android:theme="@style/StripePaymentSheetDefaultTheme"
+366-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:16:13-66
+367            android:windowSoftInputMode="adjustResize" />
+367-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:17:13-55
+368        <activity
+368-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:18:9-22:58
+369            android:name="com.stripe.android.customersheet.CustomerSheetActivity"
+369-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:19:13-82
+370            android:exported="false"
+370-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:20:13-37
+371            android:theme="@style/StripePaymentSheetDefaultTheme"
+371-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:21:13-66
+372            android:windowSoftInputMode="adjustResize" />
+372-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:22:13-55
+373        <activity
+373-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:23:9-26:69
+374            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+374-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:24:13-97
+375            android:exported="false"
+375-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:25:13-37
+376            android:theme="@style/StripePaymentSheetDefaultTheme" />
+376-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:26:13-66
+377        <activity
+377-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:27:9-30:69
+378            android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity"
+378-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:28:13-118
+379            android:exported="false"
+379-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:29:13-37
+380            android:theme="@style/StripePaymentSheetDefaultTheme" />
+380-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:30:13-66
+381        <activity
+381-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:31:9-34:69
+382            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+382-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:32:13-105
+383            android:exported="false"
+383-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:33:13-37
+384            android:theme="@style/StripePaymentSheetDefaultTheme" />
+384-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:34:13-66
+385        <activity
+385-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:35:9-38:69
+386            android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity"
+386-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:36:13-82
+387            android:exported="false"
+387-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:37:13-37
+388            android:theme="@style/StripePaymentSheetDefaultTheme" />
+388-->[com.stripe:paymentsheet:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/01942f926e2389b37a27425651f309e4/transformed/jetified-paymentsheet-20.37.4/AndroidManifest.xml:38:13-66
+389        <activity
+389-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:8:9-13:61
+390            android:name="com.stripe.android.link.LinkForegroundActivity"
+390-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:9:13-74
+391            android:autoRemoveFromRecents="true"
+391-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:10:13-49
+392            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize"
+392-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:11:13-115
+393            android:launchMode="singleTop"
+393-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:12:13-43
+394            android:theme="@style/StripeTransparentTheme" />
+394-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:13:13-58
+395        <activity
+395-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:14:9-31:20
+396            android:name="com.stripe.android.link.LinkRedirectHandlerActivity"
+396-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:15:13-79
+397            android:autoRemoveFromRecents="true"
+397-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:16:13-49
+398            android:exported="true"
+398-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:17:13-36
+399            android:launchMode="singleInstance"
+399-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:18:13-48
+400            android:theme="@style/StripeTransparentTheme" >
+400-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:19:13-58
+401            <intent-filter>
+401-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:20:13-30:29
+402                <action android:name="android.intent.action.VIEW" />
+402-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+402-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+403
+404                <category android:name="android.intent.category.DEFAULT" />
+404-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:17-76
+404-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:27-73
+405                <category android:name="android.intent.category.BROWSABLE" />
+405-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:17-78
+405-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:27-75
+406
+407                <data
+407-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+408                    android:host="complete"
+409                    android:path="/com.example.gym"
+410                    android:scheme="link-popup" />
+410-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+411            </intent-filter>
+412        </activity>
+413        <activity
+413-->[com.stripe:payments-ui-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/5929bf00faceaa3db83b8e61d5f13bbf/transformed/jetified-payments-ui-core-20.37.4/AndroidManifest.xml:8:9-11:69
+414            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+414-->[com.stripe:payments-ui-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/5929bf00faceaa3db83b8e61d5f13bbf/transformed/jetified-payments-ui-core-20.37.4/AndroidManifest.xml:9:13-80
+415            android:exported="false"
+415-->[com.stripe:payments-ui-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/5929bf00faceaa3db83b8e61d5f13bbf/transformed/jetified-payments-ui-core-20.37.4/AndroidManifest.xml:10:13-37
+416            android:theme="@style/StripePaymentSheetDefaultTheme" />
+416-->[com.stripe:payments-ui-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/5929bf00faceaa3db83b8e61d5f13bbf/transformed/jetified-payments-ui-core-20.37.4/AndroidManifest.xml:11:13-66
+417        <activity
+417-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:15:9-18:57
+418            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+418-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:16:13-76
+419            android:exported="false"
+419-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:17:13-37
+420            android:theme="@style/StripeDefaultTheme" />
+420-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:18:13-54
+421        <activity
+421-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:19:9-22:57
+422            android:name="com.stripe.android.view.PaymentMethodsActivity"
+422-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:20:13-74
+423            android:exported="false"
+423-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:21:13-37
+424            android:theme="@style/StripeDefaultTheme" />
+424-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:22:13-54
+425        <activity
+425-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:23:9-26:57
+426            android:name="com.stripe.android.view.PaymentFlowActivity"
+426-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:24:13-71
+427            android:exported="false"
+427-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:25:13-37
+428            android:theme="@style/StripeDefaultTheme" />
+428-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:26:13-54
+429        <activity
+429-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:27:9-31:58
+430            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+430-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:28:13-78
+431            android:exported="false"
+431-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:29:13-37
+432            android:theme="@style/StripeDefaultTheme"
+432-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:30:13-54
+433            android:windowSoftInputMode="adjustResize" />
+433-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:31:13-55
+434        <activity
+434-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:32:9-35:61
+435            android:name="com.stripe.android.view.PaymentRelayActivity"
+435-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:33:13-72
+436            android:exported="false"
+436-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:34:13-37
+437            android:theme="@style/StripeTransparentTheme" />
+437-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:35:13-58
+438        <!--
+439        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+440        launched the browser Activity will also handle the return URL deep link.
+441        -->
+442        <activity
+442-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:41:9-45:61
+443            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+443-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:42:13-85
+444            android:exported="false"
+444-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:43:13-37
+445            android:launchMode="singleTask"
+445-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:44:13-44
+446            android:theme="@style/StripeTransparentTheme" />
+446-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:45:13-58
+447        <activity
+447-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:46:9-63:20
+448            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+448-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:47:13-88
+449            android:exported="true"
+449-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:48:13-36
+450            android:launchMode="singleTask"
+450-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:49:13-44
+451            android:theme="@style/StripeTransparentTheme" >
+451-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:50:13-58
+452            <intent-filter>
+452-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:51:13-62:29
+453                <action android:name="android.intent.action.VIEW" />
+453-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+453-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+454
+455                <category android:name="android.intent.category.DEFAULT" />
+455-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:17-76
+455-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:27-73
+456                <category android:name="android.intent.category.BROWSABLE" />
+456-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:17-78
+456-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:27-75
+457
+458                <!-- Must match `DefaultReturnUrl#value`. -->
+459                <data
+459-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+460                    android:host="payment_return_url"
+461                    android:path="/com.example.gym"
+462                    android:scheme="stripesdk" />
+462-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+463            </intent-filter>
+464        </activity>
+465        <activity
+465-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:64:9-67:57
+466            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+466-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:65:13-114
+467            android:exported="false"
+467-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:66:13-37
+468            android:theme="@style/StripeDefaultTheme" />
+468-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:67:13-54
+469        <activity
+469-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:68:9-71:66
+470            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+470-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:69:13-90
+471            android:exported="false"
+471-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:70:13-37
+472            android:theme="@style/StripeGooglePayDefaultTheme" />
+472-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:71:13-63
+473        <activity
+473-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:72:9-75:66
+474            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+474-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:73:13-103
+475            android:exported="false"
+475-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:74:13-37
+476            android:theme="@style/StripeGooglePayDefaultTheme" />
+476-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:75:13-63
+477        <activity
+477-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:76:9-79:68
+478            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+478-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:77:13-107
+479            android:exported="false"
+479-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:78:13-37
+480            android:theme="@style/StripePayLauncherDefaultTheme" />
+480-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:79:13-65
+481        <activity
+481-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:80:9-83:61
+482            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+482-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:81:13-97
+483            android:exported="false"
+483-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:82:13-37
+484            android:theme="@style/StripeTransparentTheme" />
+484-->[com.stripe:payments-core:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/005330c71f197a8579f2b18b964102e8/transformed/jetified-payments-core-20.37.4/AndroidManifest.xml:83:13-58
+485        <activity
+485-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/lephuoc/.gradle/caches/transforms-3/a2a5d0dccf9d05b2af884b610653e2c1/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:8:9-11:54
+486            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+486-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/lephuoc/.gradle/caches/transforms-3/a2a5d0dccf9d05b2af884b610653e2c1/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:9:13-81
+487            android:exported="false"
+487-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/lephuoc/.gradle/caches/transforms-3/a2a5d0dccf9d05b2af884b610653e2c1/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:10:13-37
+488            android:theme="@style/Stripe3DS2Theme" />
+488-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/lephuoc/.gradle/caches/transforms-3/a2a5d0dccf9d05b2af884b610653e2c1/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:11:13-51
+489        <activity
+489-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:29:9-46:20
+490            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+490-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:30:13-80
+491            android:excludeFromRecents="true"
+491-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:31:13-46
+492            android:exported="true"
+492-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:32:13-36
+493            android:launchMode="singleTask"
+493-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:33:13-44
+494            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+494-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:34:13-72
+495            <intent-filter>
+495-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:35:13-45:29
+496                <action android:name="android.intent.action.VIEW" />
+496-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+496-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+497
+498                <category android:name="android.intent.category.DEFAULT" />
+498-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:17-76
+498-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:27-73
+499                <category android:name="android.intent.category.BROWSABLE" />
+499-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:17-78
+499-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:27-75
+500
+501                <data
+501-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+502                    android:host="firebase.auth"
+503                    android:path="/"
+504                    android:scheme="genericidp" />
+504-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+505            </intent-filter>
+506        </activity>
+507        <activity
+507-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:47:9-64:20
+508            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+508-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:48:13-79
+509            android:excludeFromRecents="true"
+509-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:49:13-46
+510            android:exported="true"
+510-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:50:13-36
+511            android:launchMode="singleTask"
+511-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:51:13-44
+512            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+512-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:52:13-72
+513            <intent-filter>
+513-->[com.google.firebase:firebase-auth:22.3.1] /Users/lephuoc/.gradle/caches/transforms-3/8c27624df70629ccf0168d2a4f19e540/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:53:13-63:29
+514                <action android:name="android.intent.action.VIEW" />
+514-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+514-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+515
+516                <category android:name="android.intent.category.DEFAULT" />
+516-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:17-76
+516-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:27-73
+517                <category android:name="android.intent.category.BROWSABLE" />
+517-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:17-78
+517-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:27-75
+518
+519                <data
+519-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+520                    android:host="firebase.auth"
+521                    android:path="/"
+522                    android:scheme="recaptcha" />
+522-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+523            </intent-filter>
+524        </activity>
+525
+526        <receiver
+526-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:29:9-40:20
+527            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+527-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:30:13-78
+528            android:exported="true"
+528-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:31:13-36
+529            android:permission="com.google.android.c2dm.permission.SEND" >
+529-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:32:13-73
+530            <intent-filter>
+530-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+531                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+531-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+531-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+532            </intent-filter>
+533
+534            <meta-data
+534-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:37:13-39:40
+535                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+535-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:38:17-92
+536                android:value="true" />
+536-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:39:17-37
+537        </receiver>
+538        <!--
+539             FirebaseMessagingService performs security checks at runtime,
+540             but set to not exported to explicitly avoid allowing another app to call it.
+541        -->
+542        <service
+542-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:46:9-53:19
+543            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+543-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:47:13-82
+544            android:directBootAware="true"
+544-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:48:13-43
+545            android:exported="false" >
+545-->[com.google.firebase:firebase-messaging:23.4.1] /Users/lephuoc/.gradle/caches/transforms-3/9c9de40cf568c30f881aff8aa6d39ff3/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:49:13-37
+546            <intent-filter android:priority="-500" >
+546-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+547                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+547-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+547-->[:firebase_messaging] /Users/lephuoc/Documents/customer_app_multistore/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+548            </intent-filter>
+549        </service>
+550
+551        <property
+551-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:30:9-32:61
+552            android:name="android.adservices.AD_SERVICES_CONFIG"
+552-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:31:13-65
+553            android:resource="@xml/ga_ad_services_config" />
+553-->[com.google.android.gms:play-services-measurement-api:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1e99d56234f280272ad95dd74ab899e7/transformed/jetified-play-services-measurement-api-21.5.1/AndroidManifest.xml:32:13-58
+554
+555        <provider
+555-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+556            android:name="com.google.firebase.provider.FirebaseInitProvider"
+556-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+557            android:authorities="com.example.gym.firebaseinitprovider"
+557-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+558            android:directBootAware="true"
+558-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+559            android:exported="false"
+559-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+560            android:initOrder="100" />
+560-->[com.google.firebase:firebase-common:20.4.2] /Users/lephuoc/.gradle/caches/transforms-3/4f6386e0c28c57ded4ade0772d06b21b/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+561
+562        <activity
+562-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:21:9-65:20
+563            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+563-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:22:13-109
+564            android:exported="true"
+564-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:23:13-36
+565            android:launchMode="singleTask" >
+565-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:24:13-44
+566            <intent-filter>
+566-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:25:13-64:29
+567                <action android:name="android.intent.action.VIEW" />
+567-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:5-57
+567-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:43:13-54
+568
+569                <category android:name="android.intent.category.DEFAULT" />
+569-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:17-76
+569-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:23:27-73
+570                <category android:name="android.intent.category.BROWSABLE" />
+570-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:17-78
+570-->[com.stripe:link:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/6d16755b42a1aee95901b61f2c3d26f3/transformed/jetified-link-20.37.4/AndroidManifest.xml:24:27-75
+571
+572                <!-- Returning from app2app: return_url is triggered to reopen web AuthFlow and poll accounts. -->
+573                <data
+573-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+574                    android:host="link-accounts"
+575                    android:pathPrefix="/com.example.gym/authentication_return"
+576                    android:scheme="stripe-auth" />
+576-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+577
+578                <!-- Returning from app2app: return_url is triggered to reopen native AuthFlow and poll accounts. -->
+579                <data
+579-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+580                    android:host="link-native-accounts"
+581                    android:pathPrefix="/com.example.gym/authentication_return"
+582                    android:scheme="stripe-auth" />
+582-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+583
+584                <!-- End of web AuthFlow success and cancel URIs that begin with "stripe-auth://link-accounts/{app-id}/...” -->
+585                <data
+585-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+586                    android:host="link-accounts"
+587                    android:path="/com.example.gym/success"
+588                    android:scheme="stripe-auth" />
+588-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+589                <data
+589-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+590                    android:host="link-accounts"
+591                    android:path="/com.example.gym/cancel"
+592                    android:scheme="stripe-auth" />
+592-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+593
+594                <!-- Opening app2app: Web flow triggers stripe-auth://native-redirect/{app-id}/http://web-that-redirects-to-native -->
+595                <data
+595-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+596                    android:host="native-redirect"
+597                    android:pathPrefix="/com.example.gym"
+598                    android:scheme="stripe-auth" />
+598-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+599
+600                <!-- Accepts success/cancel/fail URIs that begin with "stripe://auth-redirect” -->
+601                <data
+601-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:5-34
+602                    android:host="auth-redirect"
+603                    android:pathPrefix="/com.example.gym"
+604                    android:scheme="stripe" />
+604-->/Users/lephuoc/Documents/customer_app_multistore/android/app/src/main/AndroidManifest.xml:44:11-31
+605            </intent-filter>
+606        </activity>
+607        <activity
+607-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:66:9-69:57
+608            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+608-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:67:13-101
+609            android:exported="false"
+609-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:68:13-37
+610            android:theme="@style/StripeDefaultTheme" />
+610-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:69:13-54
+611        <activity
+611-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:70:9-74:58
+612            android:name="com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity"
+612-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:71:13-110
+613            android:exported="false"
+613-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:72:13-37
+614            android:theme="@style/StripeDefaultTheme"
+614-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:73:13-54
+615            android:windowSoftInputMode="adjustResize" />
+615-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:74:13-55
+616
+617        <provider
+617-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:76:9-80:43
+618            android:name="com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer"
+618-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:77:13-114
+619            android:authorities="com.example.gym.financialconnections-init"
+619-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:78:13-77
+620            android:exported="false"
+620-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:79:13-37
+621            android:multiprocess="true" />
+621-->[com.stripe:financial-connections:20.37.4] /Users/lephuoc/.gradle/caches/transforms-3/0e6f2acca6c55cf218fd61b41f296f4a/transformed/jetified-financial-connections-20.37.4/AndroidManifest.xml:80:13-40
+622
+623        <meta-data
+623-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:26:9-29:34
+624            android:name="main_folder_name"
+624-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:27:13-44
+625            android:value="Kommunicate" />
+625-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:28:13-40
+626
+627        <service
+627-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:31:9-35:34
+628            android:name="com.applozic.mobicomkit.api.conversation.MessageIntentService"
+628-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:32:13-89
+629            android:exported="false"
+629-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:33:13-37
+630            android:permission="android.permission.BIND_JOB_SERVICE" />
+630-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:34:13-69
+631        <service
+631-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:36:9-40:34
+632            android:name="com.applozic.mobicomkit.api.conversation.ApplozicIntentService"
+632-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:37:13-90
+633            android:exported="false"
+633-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:38:13-37
+634            android:permission="android.permission.BIND_JOB_SERVICE" />
+634-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:39:13-69
+635        <service
+635-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:41:9-45:34
+636            android:name="com.applozic.mobicomkit.api.conversation.ApplozicMqttIntentService"
+636-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:42:13-94
+637            android:exported="false"
+637-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:43:13-37
+638            android:permission="android.permission.BIND_JOB_SERVICE" />
+638-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:44:13-69
+639        <service
+639-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:46:9-50:34
+640            android:name="com.applozic.mobicomkit.api.people.UserIntentService"
+640-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:47:13-80
+641            android:exported="false"
+641-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:48:13-37
+642            android:permission="android.permission.BIND_JOB_SERVICE" />
+642-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:49:13-69
+643        <service
+643-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:51:9-55:34
+644            android:name="com.applozic.mobicomkit.api.conversation.ConversationIntentService"
+644-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:52:13-94
+645            android:exported="false"
+645-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:53:13-37
+646            android:permission="android.permission.BIND_JOB_SERVICE" />
+646-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:54:13-69
+647
+648        <receiver
+648-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:57:9-65:20
+649            android:name="com.applozic.mobicomkit.broadcast.TimeChangeBroadcastReceiver"
+649-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:58:13-89
+650            android:exported="true" >
+650-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:59:13-36
+651            <intent-filter>
+651-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:61:13-64:29
+652                <action android:name="android.intent.action.TIME_SET" />
+652-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:62:17-73
+652-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:62:25-70
+653                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+653-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:63:17-81
+653-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:63:25-78
+654            </intent-filter>
+655        </receiver>
+656        <receiver
+656-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:66:9-75:20
+657            android:name="com.applozic.mobicomkit.broadcast.ConnectivityReceiver"
+657-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:67:13-82
+658            android:enabled="true"
+658-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:68:13-35
+659            android:exported="true" >
+659-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:69:13-36
+660            <intent-filter>
+660-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:71:13-74:29
+661                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+661-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+661-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+662                <action android:name="android.intent.action.BOOT_COMPLETED" />
+662-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+662-->[:flutter_local_notifications] /Users/lephuoc/Documents/customer_app_multistore/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+663            </intent-filter>
+664        </receiver>
+665
+666        <meta-data
+666-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:77:9-79:108
+667            android:name="activity.open.on.notification"
+667-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:78:13-57
+668            android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+668-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:79:13-105
+669        <meta-data
+669-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:80:9-82:48
+670            android:name="com.package.name"
+670-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:81:13-44
+671            android:value="com.example.gym" />
+671-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:82:13-45
+672        <meta-data
+672-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:83:9-85:59
+673            android:name="com.applozic.server.url"
+673-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:84:13-51
+674            android:value="https://chat.kommunicate.io" />
+674-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:85:13-56
+675        <meta-data
+675-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:86:9-88:64
+676            android:name="com.applozic.mqtt.server.url"
+676-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:87:13-56
+677            android:value="tcp://socket.kommunicate.io:1883" />
+677-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:88:13-61
+678        <meta-data
+678-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:89:9-91:42
+679            android:name="com.applozic.mobicomkit.notification.tone"
+679-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:90:13-69
+680            android:value="eventually" />
+680-->[io.kommunicate.sdk:kommunicate:2.9.6] /Users/lephuoc/.gradle/caches/transforms-3/d6489223cfb1627a4ddf4c84c3870040/transformed/jetified-kommunicate-2.9.6/AndroidManifest.xml:91:13-39
+681
+682        <activity
+682-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+683            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+683-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+684            android:excludeFromRecents="true"
+684-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+685            android:exported="false"
+685-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+686            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+686-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+687        <!--
+688            Service handling Google Sign-In user revocation. For apps that do not integrate with
+689            Google Sign-In, this service will never be started.
+690        -->
+691        <service
+691-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+692            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+692-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+693            android:exported="true"
+693-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+694            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+694-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+695            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+695-->[com.google.android.gms:play-services-auth:20.7.0] /Users/lephuoc/.gradle/caches/transforms-3/281b29b0f6e97d6c90b04f4669fec4b5/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+696        <uses-library
+696-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+697            android:name="org.apache.http.legacy"
+697-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+698            android:required="false" />
+698-->[com.google.android.gms:play-services-maps:18.0.2] /Users/lephuoc/.gradle/caches/transforms-3/5f082a28b3e2de8b1476063dfc1780ef/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+699
+700        <activity
+700-->[com.google.android.gms:play-services-base:18.1.0] /Users/lephuoc/.gradle/caches/transforms-3/dca70a89ce67e19906b1845843551bac/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+701            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+701-->[com.google.android.gms:play-services-base:18.1.0] /Users/lephuoc/.gradle/caches/transforms-3/dca70a89ce67e19906b1845843551bac/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+702            android:exported="false"
+702-->[com.google.android.gms:play-services-base:18.1.0] /Users/lephuoc/.gradle/caches/transforms-3/dca70a89ce67e19906b1845843551bac/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+703            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+703-->[com.google.android.gms:play-services-base:18.1.0] /Users/lephuoc/.gradle/caches/transforms-3/dca70a89ce67e19906b1845843551bac/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+704
+705        <receiver
+705-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:29:9-33:20
+706            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+706-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:30:13-85
+707            android:enabled="true"
+707-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:31:13-35
+708            android:exported="false" >
+708-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:32:13-37
+709        </receiver>
+710
+711        <service
+711-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:35:9-38:40
+712            android:name="com.google.android.gms.measurement.AppMeasurementService"
+712-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:36:13-84
+713            android:enabled="true"
+713-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:37:13-35
+714            android:exported="false" />
+714-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:38:13-37
+715        <service
+715-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:39:9-43:72
+716            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+716-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:40:13-87
+717            android:enabled="true"
+717-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:41:13-35
+718            android:exported="false"
+718-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:42:13-37
+719            android:permission="android.permission.BIND_JOB_SERVICE" />
+719-->[com.google.android.gms:play-services-measurement:21.5.1] /Users/lephuoc/.gradle/caches/transforms-3/1930e825da112984cf2106833fb4552c/transformed/jetified-play-services-measurement-21.5.1/AndroidManifest.xml:43:13-69
+720
+721        <provider
+721-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+722            android:name="androidx.startup.InitializationProvider"
+722-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
+723            android:authorities="com.example.gym.androidx-startup"
+723-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
+724            android:exported="false" >
+724-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
+725            <meta-data
+725-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+726                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+726-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+727                android:value="androidx.startup" />
+727-->[androidx.emoji2:emoji2:1.4.0] /Users/lephuoc/.gradle/caches/transforms-3/92fd0f36697586c830e4dc2467b69e4f/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+728            <meta-data
+728-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lephuoc/.gradle/caches/transforms-3/295c3c835c94c1137e6784f795a486d3/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+729                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+729-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lephuoc/.gradle/caches/transforms-3/295c3c835c94c1137e6784f795a486d3/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+730                android:value="androidx.startup" />
+730-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lephuoc/.gradle/caches/transforms-3/295c3c835c94c1137e6784f795a486d3/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+731            <meta-data
+731-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+732                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+732-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+733                android:value="androidx.startup" />
+733-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+734        </provider>
+735
+736        <uses-library
+736-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+737            android:name="androidx.window.extensions"
+737-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+738            android:required="false" />
+738-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+739        <uses-library
+739-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+740            android:name="androidx.window.sidecar"
+740-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+741            android:required="false" />
+741-->[androidx.window:window:1.0.0-beta04] /Users/lephuoc/.gradle/caches/transforms-3/1d7cf6160c9d826cea41223461835948/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+742        <uses-library
+742-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/lephuoc/.gradle/caches/transforms-3/304f48429e2e77acd7191d71791329b3/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+743            android:name="android.ext.adservices"
+743-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/lephuoc/.gradle/caches/transforms-3/304f48429e2e77acd7191d71791329b3/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+744            android:required="false" />
+744-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/lephuoc/.gradle/caches/transforms-3/304f48429e2e77acd7191d71791329b3/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+745
+746        <meta-data
+746-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lephuoc/.gradle/caches/transforms-3/5331149c0ccdbad15057619c2656923e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+747            android:name="com.google.android.gms.version"
+747-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lephuoc/.gradle/caches/transforms-3/5331149c0ccdbad15057619c2656923e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+748            android:value="@integer/google_play_services_version" />
+748-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lephuoc/.gradle/caches/transforms-3/5331149c0ccdbad15057619c2656923e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+749
+750        <receiver
+750-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+751            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+751-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+752            android:directBootAware="false"
+752-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+753            android:enabled="true"
+753-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+754            android:exported="true"
+754-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+755            android:permission="android.permission.DUMP" >
+755-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+756            <intent-filter>
+756-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+757                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+757-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+757-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+758            </intent-filter>
+759            <intent-filter>
+759-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+760                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+760-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+760-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+761            </intent-filter>
+762            <intent-filter>
+762-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+763                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+763-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+763-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+764            </intent-filter>
+765            <intent-filter>
+765-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+766                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+766-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+766-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lephuoc/.gradle/caches/transforms-3/c32f75ec125dc141d07c6eb87fe7c594/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+767            </intent-filter>
+768        </receiver>
+769
+770        <service
+770-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+771            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+771-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+772            android:exported="false" >
+772-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+773            <meta-data
+773-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+774                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+774-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+775                android:value="cct" />
+775-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/2e7d95dbc5c3a6804494a6b7644b0c1c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+776        </service>
+777        <service
+777-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+778            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+778-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+779            android:exported="false"
+779-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+780            android:permission="android.permission.BIND_JOB_SERVICE" >
+780-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+781        </service>
+782
+783        <receiver
+783-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+784            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+784-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+785            android:exported="false" />
+785-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/lephuoc/.gradle/caches/transforms-3/42b36916fc1330f39139aa86fb08f1f8/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+786
+787        <meta-data
+787-->[com.google.android.instantapps:instantapps:1.1.0] /Users/lephuoc/.gradle/caches/transforms-3/9d393c08d49bb876da35c52d451fac4d/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:10:9-12:33
+788            android:name="aia-compat-api-min-version"
+788-->[com.google.android.instantapps:instantapps:1.1.0] /Users/lephuoc/.gradle/caches/transforms-3/9d393c08d49bb876da35c52d451fac4d/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:11:13-54
+789            android:value="1" />
+789-->[com.google.android.instantapps:instantapps:1.1.0] /Users/lephuoc/.gradle/caches/transforms-3/9d393c08d49bb876da35c52d451fac4d/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:12:13-30
+790    </application>
+791
+792</manifest>
